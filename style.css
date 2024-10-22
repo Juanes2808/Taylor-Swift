@@ -1,0 +1,185 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(233, 154, 251);
+    color: rgb(0, 0, 0);
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+p, blockquote {
+    line-height: 1.6;
+}
+
+/* Encabezado con fondo */
+header {
+    background: url('jpeg1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+header .overlay {
+    background-color: rgba(193, 78, 182, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+header p {
+    font-size: 24px;
+}
+
+header button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #e71cb8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #ac0786;
+}
+
+/* Sección biografía */
+#biography {
+    padding: 50px;
+    background-color: #fff; /* Fondo blanco */
+    margin: 50px auto; /* Centra la sección */
+    width: 80%; /* Ancho de la sección */
+    max-width: 800px; /* Máximo ancho */
+    border: 30px solid #e737e4; /* Borde rojo vibrante */
+    border-radius: 60px; /* Bordes redondeados */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    text-align: center; /* Texto centrado */
+}
+
+/* Estilizar el bloque de cita */
+#biography blockquote {
+    font-size: 16px;
+    font-style: Italic;
+    margin-top: 20px;
+    color: #db24b4a1; /* Color de la cita para que combine con el borde */
+    padding-left: 290px; /* Espaciado a la izquierda de la cita */
+}
+
+/* Galería de imágenes */
+#gallery {
+    padding: 50px;
+    background-color: rgb(233, 154, 251) ;
+}
+
+#gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    transition: transform 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Álbumes */
+#albums {
+    padding: 50px;
+    background-color: rgb(233, 154, 251); /* Fondo suave */
+    text-align: center; /* Centrar texto */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espacio entre álbumes */
+    text-align: center; /* Centrar texto de los álbumes */
+}
+
+.album img {
+    width: 100%;
+    border-radius: 10px; /* Bordes redondeados para imágenes */
+    transition: transform 0.3s; /* Transición suave al hacer hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para las imágenes */
+}
+
+.album img:hover {
+    transform: scale(1.05); /* Aumentar tamaño al hacer hover */
+}
+
+.album h3 {
+    font-style: arial;
+    margin-top: 10px;
+    font-size: 24px; /* Tamaño de fuente más grande */
+    color: #ffffff; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Mayúsculas para los títulos */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* Estilos para el subtítulo de álbumes */
+#albums h2 {
+    font-size: 36px; /* Tamaño del título de la sección */
+    color: #ffffff; /* Color vibrante */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra para el texto */
+}
+
+/* Música */
+#music {
+    padding: 50px;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color:rgb(233, 136, 255);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .gallery-grid, .album-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+}

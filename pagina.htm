@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Swift - Página de Fans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado con imagen de fondo -->
+    <header>
+        <div class="overlay">
+            <h1>Taylor Swift</h1>
+            <p>La artista que ha redefinido la música pop y country.</p>
+            <button onclick="openSpotify()"> ¡Escúchala Aquí! </button>
+        </div>
+    </header>
+    
+    <script>
+    function openSpotify() {
+        window.open('https://open.spotify.com/intl-es/artist/06HL4z0CvFAxyc27GXpf02', '_blank');
+    }
+    </script>
+    
+
+    <!-- Sección de biografía -->
+    <section id="biography">
+        <h2>Biografía</h2>
+        <p>
+            Taylor Alison Swift (nacida el 13 de diciembre de 1989) es una cantante y compositora estadounidense. 
+            Conocida por sus narrativas personales y la evolución de su estilo musical, Swift ha conquistado tanto el 
+            pop como el country. Ha lanzado varios álbumes que han roto récords y ha ganado múltiples premios Grammy. 
+            Con una carrera que abarca más de una década, Taylor Swift ha dejado una huella imborrable en la música.
+        </p>
+        <blockquote>
+            "Pero sigo avanzando, no puedo detenerme, no me detendré. Es como si tuviera esta música en mi mente que dice que todo estará bien."
+        </blockquote>
+    </section>
+
+    <!-- Galería de imágenes -->
+    <section id="gallery">
+        <h2>Galería de Imágenes</h2>
+        <div class="gallery-grid">
+            <img src="jpeg5.jpg" alt="Taylor Swift en concierto">
+            <img src="jepg3.jpg" alt="Taylor Swift Red Tour">
+            <img src="jpeg2.jpg" alt="Taylor Swift Evermore">
+            <img src="jpeg4.jpg" alt="Taylor Swift en los Grammy">
+        </div>
+    </section>
+
+    <!-- Sección de álbumes -->
+    <section id="albums">
+        <h2>Álbumes</h2>
+        <div class="album-grid">
+            <div class="album">
+                <img src="Folklore.png" alt="Folklore">
+                <h3>Folklore</h3>
+                <p>Lanzado: 2020</p>
+            </div>
+            <div class="album">
+                <img src="1989.jpeg" alt="1989">
+                <h3>1989</h3>
+                <p>Lanzado: 2014</p>
+            </div>
+            <div class="album">
+                <img src="red.png" alt="Red">
+                <h3>Red</h3>
+                <p>Lanzado: 2012</p>
+            </div>
+            <div class="album">
+                <img src="lover.jpeg" alt="Lover">
+                <h3>Lover</h3>
+                <p>Lanzado: 2019</p>
+            </div>
+            <div class="album">
+                <img src="ttpd.png" alt="The Tortured Poets Department">
+                <h3>Lover</h3>
+                <p>Lanzado: 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Sara Rincones </p>
+    </footer>
+
+    <!-- Script para la interacción -->
+    <script src="script.js"></script>
+</body>
+</html>
